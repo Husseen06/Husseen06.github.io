@@ -1,0 +1,852 @@
+$groen : #14da5d;
+$zwart : black;
+$fontklein : 300;
+$font : "League Spartan",sans-serif;
+$rondefoto:100%;
+
+@mixin section-hoogte {
+  height: 800px;
+  overflow: hidden; //Verbergt alles wat over de section gaat 
+}
+@mixin section-hoogteland {
+  height: 475px;
+  overflow: hidden;
+}
+
+* {
+  font-family: $font;
+  font-weight: 650;
+  box-sizing: border-box; //houd alles er netjes in
+  margin: 0;
+  padding: 0; 
+}
+
+.homepage {
+  @include section-hoogte;
+
+  //flexbox
+  nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between; //ruimte tussen items
+
+    img {
+      position: relative; //begin van pagina
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  nav li {
+    display: inline; //houd de navbar horizontaal
+    padding: 8px;
+  }
+
+  nav li a {
+    color: $zwart;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .husseen {
+    font-size: 35px;
+    color: $groen;
+  }
+
+  .foto {
+    width: 400px;
+    height: 400px;
+    border-radius: $rondefoto;
+    position: relative;
+    left: 900px;
+    top: 50px;
+  }
+
+  h1 {
+    font-size: 45px;
+    position: relative;
+    left: -300px;
+    top: 300px;
+    text-align: center;
+  }
+}
+
+.over {
+  @include section-hoogte;
+  background-color: $groen;
+
+  h2 {
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 490px;
+    top: 130px;
+  }
+
+  p {
+    text-align: left;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    left: 490px;
+    top: 150px;
+    font-weight: $fontklein;
+  }
+
+  .overfoto {
+    position: absolute;//kan het zetten waar ik wil // absolute gebruikt omdat ik er telaat achter kwam
+    top: 900px;
+    left: 20px;
+    height: 500px;
+    width: 450px;
+    border-radius: 10%;
+  }
+}
+
+.ervaringen {
+  @include section-hoogte;
+
+  h3 {
+    position: relative;
+    top: 30px;
+
+  }
+
+  h4 {
+    position: relative;
+    top: 200px;
+  }
+
+  .scholen {
+    position: relative;
+    top: 50px;
+  }
+
+  .werken {
+    position: relative;
+    top: 210px;
+  }
+
+  h3,
+  h4,
+  .scholen,
+  .werken {
+    font-size: 30px;
+    list-style-type: none;
+    position: relative;
+    left: 20px;
+  }
+
+  p {
+    font: 15px;
+    font-weight: $fontklein;
+  }
+}
+
+.vaardigheden {
+  @include section-hoogte;
+  background-color: $groen;
+
+  h5 {
+    position: relative;
+    top: 50px;
+  }
+
+  h6 {
+    position: relative;
+    top: 90px;
+  }
+
+  h5,
+  h6 {
+    font-size: 30px;
+    color: white;
+  }
+
+  ul li {
+    font-size: 25px;
+    color: white;
+    font-weight: $fontklein;
+    position: relative;
+    top: 70px;
+  }
+
+  .logos {
+    height: 100px;
+    position: relative;
+    top: 100px;
+  }
+
+  p {
+    position: relative;
+    left: 150px;
+    color: white
+  }
+}
+
+.Projecten {
+  @include section-hoogte;
+
+  header {
+    font-size: 30px;
+    position: relative;
+    top: 50px;
+    left: 705px;
+  }
+
+  .pro {
+    position: relative;
+    left: 445px;
+    top: 200px;
+    width: 320px;
+    height: 280px;
+    border-radius: 10%;
+    padding: 15px 20px; //15px boven en onder 20px links en rechts
+
+  }
+
+  .tcr {
+    position: relative;
+    font-size: 30px;
+    top: 190px;
+    left: 520px;
+  }
+
+  .chirp {
+    position: relative;
+    font-size: 30px;
+    top: 160px;
+    left: 820px;
+  }
+
+  .contact a {
+    position: relative;
+    top: 400px;
+    color: $groen;
+    text-decoration: none;
+  }
+}
+
+//vanaf hier alleen maar media queries 
+//iphone 14 pro max
+@media only screen and (max-width: 431px) and (min-width: 430px) {
+  .homepage {
+    @include section-hoogte;
+
+    nav {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 15px;
+        height: 15px;
+        position: relative;
+
+      }
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    nav li {
+      display: inline;
+      padding: 3px;
+      position: relative;
+      top: 40px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .husseen {
+      font-size: 15px;
+    }
+
+    .foto {
+      width: 250px;
+      height: 250px;
+      border-radius: $rondefoto;
+      position: relative;
+      left: 80px;
+      top: 90px;
+    }
+
+    h1 {
+      font-size: 25px;
+      position: relative;
+      left: -18px;
+      top: 400px;
+      text-align: center;
+    }
+  }
+
+  .over {
+    @include section-hoogte;
+
+    h2 {
+      font-size: 20px;
+      position: relative;
+      left: 155px;
+      top: 250px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 12px;
+      position: relative;
+      left: -5px;
+      top: 260px;
+    }
+
+    .overfoto {
+      position: absolute;
+      top: 850px;
+      left: 110px;
+      height: 200px;
+      width: 175px;
+      border-radius: 10%;
+    }
+  }
+
+  .ervaringen {
+    @include section-hoogte;
+
+    h3 {
+      position: relative;
+      top: 20px;
+
+    }
+
+    h4 {
+      position: relative;
+      top: 250px;
+    }
+
+    .scholen {
+      position: relative;
+      top: 40px;
+    }
+
+    .werken {
+      position: relative;
+      top: 285px;
+    }
+
+    h3,
+    h4,
+    .scholen,
+    .werken {
+      font-size: 20px;
+      position: relative;
+      left: 2px;
+    }
+
+    p {
+      font-size: 12px;
+      text-align: left;
+    }
+  }
+
+  .vaardigheden {
+    @include section-hoogte;
+
+    h5 {
+      position: relative;
+      top: 10px;
+    }
+
+    h6 {
+      position: relative;
+      top: 100px;
+    }
+
+    h5,
+    h6 {
+      font-size: 30px;
+    }
+
+    ul li {
+      font-size: 25px;
+      position: relative;
+      top: 70px;
+    }
+
+    .logos {
+      height: 50px;
+      position: relative;
+      top: 110px;
+    }
+
+    p {
+      position: relative;
+      top: 80px;
+      left: 150px;
+    }
+  }
+
+  .Projecten {
+    height: 935px;
+
+    header {
+      font-size: 30px;
+      position: relative;
+      top: 10px;
+      left: 140px;
+    }
+
+    .pro {
+      position: relative;
+      left: 15px;
+      top: 100px;
+      width: 180px;
+      height: 160px;
+      border-radius: 20%;
+      padding: 15px 20px;
+
+    }
+
+    .tcr {
+      position: relative;
+      font-size: 20px;
+      top: 100px;
+      left: 45px;
+    }
+
+    .chirp {
+      position: relative;
+      font-size: 20px;
+      top: 80px;
+      left: 220px;
+    }
+
+    .contact a {
+      position: relative;
+      top: 460px;
+
+    }
+  }
+}
+
+//iphone 14 pro max landscape
+@media only screen and (max-width: 933px) and (min-width: 931px) {
+  .homepage {
+    @include section-hoogteland();
+
+    nav {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+
+      img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+
+      }
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    nav li {
+      display: inline;
+      padding: 3px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    .husseen {
+      font-size: 25px;
+    }
+
+    .foto {
+      width: 250px;
+      height: 250px;
+      border-radius: $rondefoto;
+      position: relative;
+      left: 80px;
+      top: 30px;
+    }
+
+    h1 {
+      font-size: 35px;
+      position: relative;
+      left: 90px;
+      top: 200px;
+      text-align: center;
+    }
+  }
+
+  .over {
+    @include section-hoogteland();
+
+    h2 {
+      font-size: 30px;
+      position: relative;
+      left: 310px;
+      top: 90px;
+    }
+
+    p {
+      text-align: left;
+      font-size: 15px;
+      position: relative;
+      left: 305px;
+      top: 100px;
+    }
+
+    .overfoto {
+      position: absolute;
+      top: 550px;
+      left: 10px;
+      height: 300px;
+      width: 275px;
+      border-radius: 10%;
+    }
+  }
+
+  .ervaringen {
+    @include section-hoogteland();
+
+    h3 {
+      position: relative;
+      top: 50px;
+
+    }
+
+    h4 {
+      position: relative;
+      top: 100px;
+    }
+
+    .scholen {
+      position: relative;
+      top: 60px;
+    }
+
+    .werken {
+      position: relative;
+      top: 105px;
+    }
+
+    h3,
+    h4,
+    .scholen,
+    .werken {
+      font-size: 15px;
+      list-style-type: none;
+      position: relative;
+      left: 2px;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+
+  .vaardigheden {
+    @include section-hoogteland();
+
+    h5 {
+      position: relative;
+      top: 10px;
+    }
+
+    h6 {
+      position: relative;
+      top: 100px;
+    }
+
+    h5,
+    h6 {
+      font-size: 20px;
+    }
+
+    ul li {
+      font-size: 15px;
+      position: relative;
+      top: 10px;
+    }
+
+    .logos {
+      height: 30px;
+      position: relative;
+      top: 110px;
+    }
+
+    p {
+      position: relative;
+      top: 80px;
+      left: 150px;
+    }
+  }
+
+  .Projecten {
+    @include section-hoogteland();
+
+    header {
+      font-size: 40px;
+      position: relative;
+      top: 20px;
+      left: 390px;
+    }
+
+    .pro {
+      position: relative;
+      left: 185px;
+      top: 30px;
+      width: 280px;
+      height: 260px;
+      border-radius: 20%;
+      padding: 15px 20px;
+
+    }
+
+    .tcr {
+      position: relative;
+      font-size: 30px;
+      top: 30px;
+      left: 230px;
+    }
+
+    .chirp {
+      position: relative;
+      font-size: 30px;
+      top: 5px;
+      left: 500px;
+    }
+
+    .contact a {
+      position: relative;
+      top: 35px;
+    }
+  }
+}
+
+//nest hub max
+@media only screen and (max-width: 1281px) and (min-width: 1279px) {
+  .homepage {
+    @include section-hoogte;
+
+    nav {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+
+      img {
+        width: 25px;
+        height: 25px;
+        position: relative;
+      }
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    nav li {
+      display: inline;
+      padding: 8px;
+    }
+
+    nav li a {
+      text-decoration: none;
+      font-size: 25px;
+    }
+
+    .husseen {
+      font-size: 35px;
+    }
+
+    .foto {
+      width: 400px;
+      height: 400px;
+      border-radius: $rondefoto;
+      position: relative;
+      left: 800px;
+      top: 50px;
+    }
+
+    h1 {
+      font-size: 45px;
+      position: relative;
+      left: -300px;
+      top: 300px;
+      text-align: center;
+    }
+  }
+
+  .over {
+    @include section-hoogte;
+
+    h2 {
+      font-size: 30px;
+      position: relative;
+      left: 490px;
+      top: 30px;
+    }
+
+    p {
+      text-align: left;
+      font-size: 20px;
+      position: relative;
+      left: 490px;
+      top: 50px;
+    }
+
+    .overfoto {
+      position: absolute;
+      top: 830px;
+      left: 20px;
+      height: 500px;
+      width: 450px;
+      border-radius: 10%;
+    }
+  }
+
+  .ervaringen {
+    @include section-hoogte;
+
+    h3 {
+      position: relative;
+      top: 30px;
+
+    }
+
+    h4 {
+      position: relative;
+      top: 150px;
+    }
+
+    .scholen {
+      position: relative;
+      top: 50px;
+    }
+
+    .werken {
+      position: relative;
+      top: 195px;
+    }
+
+    h3,
+    h4,
+    .scholen,
+    .werken {
+      font-size: 30px;
+      list-style-type: none;
+      position: relative;
+      left: 20px;
+    }
+
+    p {
+      font: 15px;
+    }
+  }
+
+  .vaardigheden {
+    @include section-hoogte;
+
+    h5 {
+      position: relative;
+      top: 20px;
+    }
+
+    h6 {
+      position: relative;
+      top: 100px;
+    }
+
+    h5,
+    h6 {
+      font-size: 30px;
+    }
+
+    ul li {
+      font-size: 25px;
+      position: relative;
+      top: 40px;
+    }
+
+    .logos {
+      height: 100px;
+      position: relative;
+      top: 110px;
+    }
+
+    p {
+      position: relative;
+      left: 150px;
+    }
+  }
+
+  .Projecten {
+    @include section-hoogte;
+
+    header {
+      font-size: 40px;
+      position: relative;
+      top: 80px;
+      left: 580px;
+    }
+
+    .pro {
+      position: relative;
+      left: 225px;
+      top: 100px;
+      width: 420px;
+      height: 380px;
+      border-radius: 10%;
+      padding: 15px 20px;
+
+    }
+
+    .tcr {
+      position: relative;
+      font-size: 30px;
+      top: 110px;
+      left: 340px;
+    }
+
+    .chirp {
+      position: relative;
+      font-size: 30px;
+      top: 80px;
+      left: 760px;
+    }
+
+    .contact a {
+      position: relative;
+      top: 210px;
+    }
+  }
+}
