@@ -1,708 +1,196 @@
+/* Reset */
 * {
-  font-family: "League Spartan", sans-serif;
-  font-weight: 650;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-.homepage {
-  height: 800px;
-  overflow: hidden;
+/* Body en algemene styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e6f2ff; /* Lichtblauwe achtergrond */
 }
-.homepage nav {
-  align-items: center;
+
+/* Container om de layout te centreren */
+.container {
+  max-width: 100%; /* Gebruik volledige breedte van het scherm */
+  margin: 0 auto;
+  padding: 20px; /* Vaste padding */
+}
+
+/* Homepage */
+#home {
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  padding: 100px 50px; /* Verhoogde padding boven, onder, links en rechts */
+  background: #e6f2ff;
 }
-.homepage nav img {
-  position: relative;
-  width: 25px;
-  height: 25px;
+
+.intro h2 {
+  color: #007acc; /* Middelblauw voor subtitel */
+  font-size: 36px; /* Vergrote font-size voor subtitel */
+  margin-bottom: 20px;
 }
-.homepage nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+.intro h1 {
+  font-size: 70px; /* Vergrote font-size voor hoofd titel */
+  margin-bottom: 30px;
+  color: #003366; /* Donkerblauw voor titel */
 }
-.homepage nav li {
-  display: inline;
-  padding: 8px;
+
+.intro p {
+  font-size: 24px; /* Vergrote font-size voor tekst */
+  max-width: 600px; /* Vergrote max-width voor meer ruimte */
+  margin-bottom: 40px; /* Vergrote marge onder de tekst */
 }
-.homepage nav li a {
-  color: black;
-  text-decoration: none;
+
+.buttons button {
+  background: #007acc; /* Blauwe knoppen */
+  color: white;
+  padding: 15px 30px; /* Vergrote padding voor knoppen */
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px; /* Vaste afstand tussen knoppen */
+  cursor: pointer;
+  font-size: 18px; /* Vergrote font-size voor knoppen */
+}
+
+.buttons button:hover {
+  background: #005b99; /* Donkerdere blauw bij hover */
+}
+
+.intro-image img {
+  width: 400px; /* Vergrote breedte voor de afbeelding */
+  border-radius: 50%;}
+
+/* Vaardigheden */
+#vaardigheden {
+  padding: 40px 50px;
+  text-align: center;
+  background: #e6f2ff;
+}
+
+#vaardigheden h2 {
+  color: #003366;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.skill {
+  margin: 20px 0;
+}
+
+.skill label {
   font-size: 20px;
+  color: #003366;
+  display: block;
+  margin-bottom: 5px;
 }
-.homepage .husseen {
-  font-size: 35px;
-  color: #14da5d;
+
+progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 5px;
 }
-.homepage .foto {
-  width: 400px;
-  height: 400px;
-  border-radius: 100%;
-  position: relative;
-  left: 900px;
-  top: 50px;
+
+progress[value] {
+  background-color: #e6f2ff;
 }
-.homepage h1 {
-  font-size: 45px;
-  position: relative;
-  left: -300px;
-  top: 300px;
+
+progress::-webkit-progress-bar {
+  background-color: #f3f3f3;
+}
+
+progress::-webkit-progress-value {
+  background-color: #007acc;
+}
+
+/* Projecten */
+#projecten {
+  padding: 40px 50px;
+  text-align: center;
+  background: #e6f2ff;
+}
+
+#projecten h2 {
+  color: #003366;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.projecten-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project {
+  background: #ffffff;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Breedte van elk project */
   text-align: center;
 }
 
-.over {
-  height: 800px;
-  overflow: hidden;
-  background-color: #14da5d;
-}
-.over h2 {
-  font-size: 30px;
-  color: white;
-  position: relative;
-  left: 490px;
-  top: 130px;
-}
-.over p {
-  text-align: left;
-  font-size: 30px;
-  color: white;
-  position: relative;
-  left: 490px;
-  top: 150px;
-  font-weight: 300;
-}
-.over .overfoto {
-  position: absolute;
-  top: 900px;
-  left: 20px;
-  height: 500px;
-  width: 450px;
-  border-radius: 10%;
+.project h3 {
+  color: #003366; /* Donkerblauwe titels voor projecten */
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
-.ervaringen {
-  height: 800px;
-  overflow: hidden;
-}
-.ervaringen h3 {
-  position: relative;
-  top: 30px;
-}
-.ervaringen h4 {
-  position: relative;
-  top: 200px;
-}
-.ervaringen .scholen {
-  position: relative;
-  top: 50px;
-}
-.ervaringen .werken {
-  position: relative;
-  top: 210px;
-}
-.ervaringen h3,
-.ervaringen h4,
-.ervaringen .scholen,
-.ervaringen .werken {
-  font-size: 30px;
-  list-style-type: none;
-  position: relative;
-  left: 20px;
-}
-.ervaringen p {
-  font: 15px;
-  font-weight: 300;
+.project p {
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
-.vaardigheden {
-  height: 800px;
-  overflow: hidden;
-  background-color: #14da5d;
-}
-.vaardigheden h5 {
-  position: relative;
-  top: 50px;
-}
-.vaardigheden h6 {
-  position: relative;
-  top: 90px;
-}
-.vaardigheden h5,
-.vaardigheden h6 {
-  font-size: 30px;
-  color: white;
-}
-.vaardigheden ul li {
-  font-size: 25px;
-  color: white;
-  font-weight: 300;
-  position: relative;
-  top: 70px;
-}
-.vaardigheden .logos {
-  height: 100px;
-  position: relative;
-  top: 100px;
-}
-.vaardigheden p {
-  position: relative;
-  left: 150px;
-  color: white;
-}
-
-.Projecten {
-  height: 800px;
-  overflow: hidden;
-}
-.Projecten header {
-  font-size: 30px;
-  position: relative;
-  top: 50px;
-  left: 705px;
-}
-.Projecten .pro {
-  position: relative;
-  left: 445px;
-  top: 200px;
-  width: 320px;
-  height: 280px;
-  border-radius: 10%;
-  padding: 15px 20px;
-}
-.Projecten .tcr {
-  position: relative;
-  font-size: 30px;
-  top: 190px;
-  left: 520px;
-}
-.Projecten .chirp {
-  position: relative;
-  font-size: 30px;
-  top: 160px;
-  left: 820px;
-}
-.Projecten .contact a {
-  position: relative;
-  top: 400px;
-  color: #14da5d;
+.project a {
+  color: #007acc;
   text-decoration: none;
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 431px) and (min-width: 430px) {
-  .homepage {
-    height: 800px;
-    overflow: hidden;
-  }
-  .homepage nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  .homepage nav img {
-    width: 15px;
-    height: 15px;
-    position: relative;
-  }
-  .homepage nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .homepage nav li {
-    display: inline;
-    padding: 3px;
-    position: relative;
-    top: 40px;
-  }
-  .homepage nav li a {
-    text-decoration: none;
-    font-size: 15px;
-  }
-  .homepage .husseen {
-    font-size: 15px;
-  }
-  .homepage .foto {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    position: relative;
-    left: 80px;
-    top: 90px;
-  }
-  .homepage h1 {
-    font-size: 25px;
-    position: relative;
-    left: -18px;
-    top: 400px;
-    text-align: center;
-  }
-  .over {
-    height: 800px;
-    overflow: hidden;
-  }
-  .over h2 {
-    font-size: 20px;
-    position: relative;
-    left: 155px;
-    top: 250px;
-  }
-  .over p {
-    text-align: center;
-    font-size: 12px;
-    position: relative;
-    left: -5px;
-    top: 260px;
-  }
-  .over .overfoto {
-    position: absolute;
-    top: 850px;
-    left: 110px;
-    height: 200px;
-    width: 175px;
-    border-radius: 10%;
-  }
-  .ervaringen {
-    height: 800px;
-    overflow: hidden;
-  }
-  .ervaringen h3 {
-    position: relative;
-    top: 20px;
-  }
-  .ervaringen h4 {
-    position: relative;
-    top: 250px;
-  }
-  .ervaringen .scholen {
-    position: relative;
-    top: 40px;
-  }
-  .ervaringen .werken {
-    position: relative;
-    top: 285px;
-  }
-  .ervaringen h3,
-  .ervaringen h4,
-  .ervaringen .scholen,
-  .ervaringen .werken {
-    font-size: 20px;
-    position: relative;
-    left: 2px;
-  }
-  .ervaringen p {
-    font-size: 12px;
-    text-align: left;
-  }
-  .vaardigheden {
-    height: 800px;
-    overflow: hidden;
-  }
-  .vaardigheden h5 {
-    position: relative;
-    top: 10px;
-  }
-  .vaardigheden h6 {
-    position: relative;
-    top: 100px;
-  }
-  .vaardigheden h5,
-  .vaardigheden h6 {
-    font-size: 30px;
-  }
-  .vaardigheden ul li {
-    font-size: 25px;
-    position: relative;
-    top: 70px;
-  }
-  .vaardigheden .logos {
-    height: 50px;
-    position: relative;
-    top: 110px;
-  }
-  .vaardigheden p {
-    position: relative;
-    top: 80px;
-    left: 150px;
-  }
-  .Projecten {
-    height: 935px;
-  }
-  .Projecten header {
-    font-size: 30px;
-    position: relative;
-    top: 10px;
-    left: 140px;
-  }
-  .Projecten .pro {
-    position: relative;
-    left: 15px;
-    top: 100px;
-    width: 180px;
-    height: 160px;
-    border-radius: 20%;
-    padding: 15px 20px;
-  }
-  .Projecten .tcr {
-    position: relative;
-    font-size: 20px;
-    top: 100px;
-    left: 45px;
-  }
-  .Projecten .chirp {
-    position: relative;
-    font-size: 20px;
-    top: 80px;
-    left: 220px;
-  }
-  .Projecten .contact a {
-    position: relative;
-    top: 460px;
-  }
+.project a:hover {
+  text-decoration: underline;
 }
-@media only screen and (max-width: 933px) and (min-width: 931px) {
-  .homepage {
-    height: 475px;
-    overflow: hidden;
-  }
-  .homepage nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  .homepage nav img {
-    width: 25px;
-    height: 25px;
-    position: relative;
-  }
-  .homepage nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .homepage nav li {
-    display: inline;
-    padding: 3px;
-  }
-  .homepage nav li a {
-    text-decoration: none;
-    font-size: 25px;
-  }
-  .homepage .husseen {
-    font-size: 25px;
-  }
-  .homepage .foto {
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    position: relative;
-    left: 80px;
-    top: 30px;
-  }
-  .homepage h1 {
-    font-size: 35px;
-    position: relative;
-    left: 90px;
-    top: 200px;
-    text-align: center;
-  }
-  .over {
-    height: 475px;
-    overflow: hidden;
-  }
-  .over h2 {
-    font-size: 30px;
-    position: relative;
-    left: 310px;
-    top: 90px;
-  }
-  .over p {
-    text-align: left;
-    font-size: 15px;
-    position: relative;
-    left: 305px;
-    top: 100px;
-  }
-  .over .overfoto {
-    position: absolute;
-    top: 550px;
-    left: 10px;
-    height: 300px;
-    width: 275px;
-    border-radius: 10%;
-  }
-  .ervaringen {
-    height: 475px;
-    overflow: hidden;
-  }
-  .ervaringen h3 {
-    position: relative;
-    top: 50px;
-  }
-  .ervaringen h4 {
-    position: relative;
-    top: 100px;
-  }
-  .ervaringen .scholen {
-    position: relative;
-    top: 60px;
-  }
-  .ervaringen .werken {
-    position: relative;
-    top: 105px;
-  }
-  .ervaringen h3,
-  .ervaringen h4,
-  .ervaringen .scholen,
-  .ervaringen .werken {
-    font-size: 15px;
-    list-style-type: none;
-    position: relative;
-    left: 2px;
-  }
-  .ervaringen p {
-    font-size: 20px;
-    text-align: left;
-  }
-  .vaardigheden {
-    height: 475px;
-    overflow: hidden;
-  }
-  .vaardigheden h5 {
-    position: relative;
-    top: 10px;
-  }
-  .vaardigheden h6 {
-    position: relative;
-    top: 100px;
-  }
-  .vaardigheden h5,
-  .vaardigheden h6 {
-    font-size: 20px;
-  }
-  .vaardigheden ul li {
-    font-size: 15px;
-    position: relative;
-    top: 10px;
-  }
-  .vaardigheden .logos {
-    height: 30px;
-    position: relative;
-    top: 110px;
-  }
-  .vaardigheden p {
-    position: relative;
-    top: 80px;
-    left: 150px;
-  }
-  .Projecten {
-    height: 475px;
-    overflow: hidden;
-  }
-  .Projecten header {
-    font-size: 40px;
-    position: relative;
-    top: 20px;
-    left: 390px;
-  }
-  .Projecten .pro {
-    position: relative;
-    left: 185px;
-    top: 30px;
-    width: 280px;
-    height: 260px;
-    border-radius: 20%;
-    padding: 15px 20px;
-  }
-  .Projecten .tcr {
-    position: relative;
-    font-size: 30px;
-    top: 30px;
-    left: 230px;
-  }
-  .Projecten .chirp {
-    position: relative;
-    font-size: 30px;
-    top: 5px;
-    left: 500px;
-  }
-  .Projecten .contact a {
-    position: relative;
-    top: 35px;
-  }
+
+
+/* Talen */
+#talen {
+  padding: 40px 50px;
+  text-align: center;
+  background: #e6f2ff;
 }
-@media only screen and (max-width: 1281px) and (min-width: 1279px) {
-  .homepage {
-    height: 800px;
-    overflow: hidden;
-  }
-  .homepage nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-  }
-  .homepage nav img {
-    width: 25px;
-    height: 25px;
-    position: relative;
-  }
-  .homepage nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .homepage nav li {
-    display: inline;
-    padding: 8px;
-  }
-  .homepage nav li a {
-    text-decoration: none;
-    font-size: 25px;
-  }
-  .homepage .husseen {
-    font-size: 35px;
-  }
-  .homepage .foto {
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    position: relative;
-    left: 800px;
-    top: 50px;
-  }
-  .homepage h1 {
-    font-size: 45px;
-    position: relative;
-    left: -300px;
-    top: 300px;
-    text-align: center;
-  }
-  .over {
-    height: 800px;
-    overflow: hidden;
-  }
-  .over h2 {
-    font-size: 30px;
-    position: relative;
-    left: 490px;
-    top: 30px;
-  }
-  .over p {
-    text-align: left;
-    font-size: 20px;
-    position: relative;
-    left: 490px;
-    top: 50px;
-  }
-  .over .overfoto {
-    position: absolute;
-    top: 830px;
-    left: 20px;
-    height: 500px;
-    width: 450px;
-    border-radius: 10%;
-  }
-  .ervaringen {
-    height: 800px;
-    overflow: hidden;
-  }
-  .ervaringen h3 {
-    position: relative;
-    top: 30px;
-  }
-  .ervaringen h4 {
-    position: relative;
-    top: 150px;
-  }
-  .ervaringen .scholen {
-    position: relative;
-    top: 50px;
-  }
-  .ervaringen .werken {
-    position: relative;
-    top: 195px;
-  }
-  .ervaringen h3,
-  .ervaringen h4,
-  .ervaringen .scholen,
-  .ervaringen .werken {
-    font-size: 30px;
-    list-style-type: none;
-    position: relative;
-    left: 20px;
-  }
-  .ervaringen p {
-    font: 15px;
-  }
-  .vaardigheden {
-    height: 800px;
-    overflow: hidden;
-  }
-  .vaardigheden h5 {
-    position: relative;
-    top: 20px;
-  }
-  .vaardigheden h6 {
-    position: relative;
-    top: 100px;
-  }
-  .vaardigheden h5,
-  .vaardigheden h6 {
-    font-size: 30px;
-  }
-  .vaardigheden ul li {
-    font-size: 25px;
-    position: relative;
-    top: 40px;
-  }
-  .vaardigheden .logos {
-    height: 100px;
-    position: relative;
-    top: 110px;
-  }
-  .vaardigheden p {
-    position: relative;
-    left: 150px;
-  }
-  .Projecten {
-    height: 800px;
-    overflow: hidden;
-  }
-  .Projecten header {
-    font-size: 40px;
-    position: relative;
-    top: 80px;
-    left: 580px;
-  }
-  .Projecten .pro {
-    position: relative;
-    left: 225px;
-    top: 100px;
-    width: 420px;
-    height: 380px;
-    border-radius: 10%;
-    padding: 15px 20px;
-  }
-  .Projecten .tcr {
-    position: relative;
-    font-size: 30px;
-    top: 110px;
-    left: 340px;
-  }
-  .Projecten .chirp {
-    position: relative;
-    font-size: 30px;
-    top: 80px;
-    left: 760px;
-  }
-  .Projecten .contact a {
-    position: relative;
-    top: 210px;
-  }
-}/*# sourceMappingURL=style.css.map */
+
+#talen h2 {
+  color: #003366;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#talen ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#talen ul li {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Contact */
+#contact {
+  padding: 20px 10px;
+  text-align: center;
+  background: #e6f2ff;
+}
+
+#contact p {
+  font-size: 18px;
+  color: #003366;
+}
