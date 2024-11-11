@@ -10,14 +10,14 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: #333;
-  background-color: #e6f2ff; /* Lichtblauwe achtergrond */
+  background-color: #e6ffe6; /* Lichtgroene achtergrond */
 }
 
 /* Container om de layout te centreren */
 .container {
-  max-width: 100%; /* Gebruik volledige breedte van het scherm */
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px; /* Vaste padding */
+  padding: 20px;
 }
 
 /* Homepage */
@@ -25,56 +25,60 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 100px 50px; /* Verhoogde padding boven, onder, links en rechts */
-  background: #e6f2ff;
+  padding: 100px 50px;
+  background: #e6ffe6;
+  height: 100vh;
 }
 
 .intro h2 {
-  color: #007acc; /* Middelblauw voor subtitel */
-  font-size: 36px; /* Vergrote font-size voor subtitel */
+  color: #339966; /* Middengroen voor subtitel */
+  font-size: 36px;
   margin-bottom: 20px;
 }
 
 .intro h1 {
-  font-size: 70px; /* Vergrote font-size voor hoofd titel */
+  font-size: 70px;
   margin-bottom: 30px;
-  color: #003366; /* Donkerblauw voor titel */
+  color: #26734d; /* Donkergroen voor titel */
 }
 
 .intro p {
-  font-size: 24px; /* Vergrote font-size voor tekst */
-  max-width: 600px; /* Vergrote max-width voor meer ruimte */
-  margin-bottom: 40px; /* Vergrote marge onder de tekst */
+  font-size: 24px;
+  max-width: 600px;
+  margin-bottom: 40px;
 }
 
 .buttons button {
-  background: #007acc; /* Blauwe knoppen */
+  background: #339966; /* Groene knoppen */
   color: white;
-  padding: 15px 30px; /* Vergrote padding voor knoppen */
+  padding: 15px 30px;
   border: none;
   border-radius: 5px;
-  margin-right: 20px; /* Vaste afstand tussen knoppen */
+  margin-right: 20px;
   cursor: pointer;
-  font-size: 18px; /* Vergrote font-size voor knoppen */
+  font-size: 18px;
 }
 
 .buttons button:hover {
-  background: #005b99; /* Donkerdere blauw bij hover */
+  background: #26734d; /* Donkerdere groen bij hover */
 }
 
 .intro-image img {
-  width: 400px; /* Vergrote breedte voor de afbeelding */
-  border-radius: 50%;}
+  width: 35vw;
+  height: 30vw;
+  border-radius: 50%;
+}
 
 /* Vaardigheden */
 #vaardigheden {
   padding: 40px 50px;
   text-align: center;
-  background: #e6f2ff;
+  background: #e6ffe6;
+  height: 100vh;
 }
 
 #vaardigheden h2 {
-  color: #003366;
+  color: #26734d;
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -85,7 +89,7 @@ body {
 
 .skill label {
   font-size: 20px;
-  color: #003366;
+  color: #26734d;
   display: block;
   margin-bottom: 5px;
 }
@@ -97,7 +101,7 @@ progress {
 }
 
 progress[value] {
-  background-color: #e6f2ff;
+  background-color: #e6ffe6;
 }
 
 progress::-webkit-progress-bar {
@@ -105,18 +109,19 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: #007acc;
+  background-color: #339966;
 }
 
 /* Projecten */
 #projecten {
   padding: 40px 50px;
   text-align: center;
-  background: #e6f2ff;
+  background: #e6ffe6;
+  height: 100vh;
 }
 
 #projecten h2 {
-  color: #003366;
+  color: #26734d;
   font-size: 30px;
   margin-bottom: 30px;
 }
@@ -133,12 +138,12 @@ progress::-webkit-progress-value {
   margin: 15px;
   border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px; /* Breedte van elk project */
+  width: 300px;
   text-align: center;
 }
 
 .project h3 {
-  color: #003366; /* Donkerblauwe titels voor projecten */
+  color: #26734d;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -149,7 +154,7 @@ progress::-webkit-progress-value {
 }
 
 .project a {
-  color: #007acc;
+  color: #339966;
   text-decoration: none;
   font-size: 18px;
 }
@@ -158,16 +163,15 @@ progress::-webkit-progress-value {
   text-decoration: underline;
 }
 
-
 /* Talen */
 #talen {
   padding: 40px 50px;
   text-align: center;
-  background: #e6f2ff;
+  background: #e6ffe6;
 }
 
 #talen h2 {
-  color: #003366;
+  color: #26734d;
   font-size: 30px;
   margin-bottom: 20px;
 }
@@ -187,10 +191,10 @@ progress::-webkit-progress-value {
 #contact {
   padding: 20px 10px;
   text-align: center;
-  background: #e6f2ff;
+  background: #e6ffe6;
 }
 
 #contact p {
   font-size: 18px;
-  color: #003366;
+  color: #26734d;
 }
