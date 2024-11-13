@@ -1,149 +1,78 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio van Huseen Aden</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Husseen Aden - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
-        <!-- Home -->
-        <section id="home">
-            <div class="intro">
-                <h2>Hallo, ik ben</h2>
-                <h1>Huseen Aden</h1>
-                <p>Student Software Developer aan het Techniek College Rotterdam met een passie voor technologie en
-                    softwareontwikkeling.</p>
-                <div class="buttons">
-                    <button>Contact Me</button>
-                    <button>Download CV</button>
-                </div>
-            </div>
-            <div class="intro-image">
-                <img src="fotoover.jpg" alt="Foto van Huseen Aden">
-            </div>
-        </section>
-        <!-- Over Mij -->
-       <!-- Over Mij & Werkervaring -->
-<section id="over-mij-werkervaring">
-    <!-- Over Mij -->
-    <div class="over-mij">
-        <h3>Over Mij</h3>
-        <p>Hallo, ik ben Husseen, een eerstejaars student Software Developer bij het Techniek College
-            Rotterdam. Ik ben 17 jaar oud en kom uit Ceel Barde, Somalië.
-            In mijn vrije tijd speel ik graag voetbal met vrienden, game ik en  kijk ik films en series.
-            > Ik heb ervaring met HTML, CSS, JavaScript en PHP. Onlangs heb ik het project Chirpify afgerond,
-            waarvoor ik HTML, CSS, JavaScript  en PHP heb gebruikt. Ook heb ik als project een website
-            gemaakt
-            voor het Techniek College Rotterdam, waarbij ik HTML, CSS en JavaScript heb toegepast.
-            Ik vind het leuk om te leren en mijn vaardigheden te verbeteren terwijl ik aan deze projecten
-            werk.</p>
-    </div>
+  <!-- Header Sectie -->
+  <section id="header" class="kop">
+    <h1>Husseen Aden</h1>
+    <p>Tweede Jaars Student Software Developer</p>
+    <nav class="navigatie">
+      <a href="#over-mij">Over Mij</a>
+      <a href="#ervaring">Ervaring</a>
+      <a href="#vaardigheden">Vaardigheden</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </section>
 
-    <!-- Werkervaring -->
-    <div class="werkervaring">
-        <h2>Werkervaring</h2>
-    
-        <!-- Werkervaring 1 -->
-        <div class="ervaring">
-            <h4>Brand Ambassador</h4>
-            <p><strong>Werkgever:</strong> Oppizi, Rotterdam | <strong>Periode:</strong> Mei 2024 - Heden</p>
-            <p>Ik werk sinds kort in flyerdistributie, waar ik flyers uitdeel op drukke locaties.</p>
-        </div>
-    
-        <!-- Werkervaring 2 -->
-        <div class="ervaring">
-            <h4>Maaltijd Bezorger</h4>
-            <p><strong>Werkgever:</strong> Thuisbezorgd, Rotterdam | <strong>Periode:</strong> Mei 2023 - Mei 2024</p>
-            <p>Ik heb gewerkt bij Thuisbezorgd en heb geleerd hoe ik snel en handig kan werken. Ik werkte 3 dagen per week (dinsdag, donderdag en zondag) van 17:00 tot 20:00, in totaal 9 uur per week.</p>
-        </div>
-    
-        <!-- Werkervaring 3 -->
-        <div class="ervaring">
-            <h4>Vakkenvuller</h4>
-            <p><strong>Werkgever:</strong> Albert Heijn, Centrumpassage 27 | <strong>Periode:</strong> Nov 2021 - Nov 2022</p>
-            <p>Bij Albert Heijn leerde ik goed praten met collega's en klanten terwijl ik groente, vlees en brood aanvulde, en soms andere dingen. Ik werkte daar 2-4 keer per week, meestal in het weekend van 7:00 tot 12:00 en op schooldagen van 17:00 tot 19:00.</p>
-        </div>
+  <!-- Over Mij Sectie -->
+  <section id="over-mij" class="over-mij">
+    <h2>Over Mij</h2>
+    <p>Hallo, ik ben Husseen, een eerstejaars student Software Developer bij het Techniek College Rotterdam. Ik ben 17 jaar oud en kom uit Ceel Barde, Somalië.</p>
+<p>In mijn vrije tijd speel ik graag voetbal met vrienden, game ik en kijk ik films en series.</p>
+<p>Ik heb ervaring met HTML, CSS, JavaScript en PHP. Onlangs heb ik het project Chirpify afgerond, waarvoor ik HTML, CSS, JavaScript en PHP heb gebruikt.</p>
+<p>Ook heb ik als project een website gemaakt voor het Techniek College Rotterdam, waarbij ik HTML, CSS en JavaScript heb toegepast.</p>
+<p>Ik vind het leuk om te leren en mijn vaardigheden te verbeteren terwijl ik aan deze projecten werk.</p>
+
+    <img src="profile.png" alt="">
 </section>
 
 
-        <!-- Vaardigheden -->
-        <section id="vaardigheden">
-            <h2>Vaardigheden</h2>
-            <div class="skill">
-                <label for="html">HTML</label>
-                <progress id="html" value="90" max="100"></progress>
-            </div>
-            <div class="skill">
-                <label for="css">CSS</label>
-                <progress id="css" value="90" max="100"></progress>
-            </div>
-            <div class="skill">
-                <label for="scss">SCSS</label>
-                <progress id="scss" value="80" max="100"></progress>
-            </div>
-            <div class="skill">
-                <label for="javascript">JavaScript</label>
-                <progress id="javascript" value="60" max="100"></progress>
-            </div>
-            <div class="skill">
-                <label for="php">PHP</label>
-                <progress id="php" value="60" max="100"></progress>
-            </div>
-            <div class="skill">
-                <label for="wordpress">WordPress</label>
-                <progress id="wordpress" value="75" max="100"></progress>
-            </div>
-        </section>
-
-        <!-- Projecten -->
-        <section id="projecten">
-            <h2>Projecten</h2>
-            <div class="projecten-gallery">
-                <div class="project">
-                    <h3>Project 1: Portfolio Website</h3>
-                    <p>Een interactieve portfolio website gebouwd met HTML, CSS en JavaScript. Dit project toont mijn
-                        vaardigheden in front-end webontwikkeling.</p>
-                    <a href="#">Bekijk Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project 2: Blogplatform</h3>
-                    <p>Een blogplatform ontwikkeld met PHP en MySQL, inclusief een gebruikersauthenticatiesysteem en een
-                        blogeditor voor posts.</p>
-                    <a href="#">Bekijk Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project 3: E-commerce Website</h3>
-                    <p>Een e-commerce website gebouwd met WordPress, inclusief productbeheer, winkelwagentje en
-                        betalingsverwerking via WooCommerce.</p>
-                    <a href="#">Bekijk Project</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Talen -->
-        <section id="talen">
-            <h2>Talen die ik spreek</h2>
-            <ul>
-                <li>Nederlands (vloeiend)</li>
-                <li>Engels (goed)</li>
-                <li>Somali (moedertaal)</li>
-            </ul>
-        </section>
-
-        <!-- Contact -->
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: huseenahmed24@outlook.com<br>
-                Telefoon: 0687224078<br>
-                LinkedIn: <a href="#">linkedin.com/in/huseen-aden</a><br>
-                GitHub: <a href="#">github.com/jouw-gebruikersnaam</a>
-            </p>
-        </section>
+  <!-- Vaardigheden Sectie -->
+  <section id="vaardigheden" class="vaardigheden">
+    <h2>Vaardigheden & Technologieën</h2>
+    <div class="vaardigheid-set">
+      <span><img src="html.png" alt="HTML">HTML</span>
+      <span><img src="css.png" alt="CSS">CSS</span>
+      <span><img src="scss.png" alt="SCSS">SCSS</span>
+      <span><img src="js.png" alt="JavaScript">JavaScript</span>
+      <span><img src="php.png" alt="PHP">PHP</span>
+      <span><img src="sql.png" alt="SQL">SQL</span>
+      <span><img src="wordpress.png" alt="WordPress">WordPress</span>
+      <span><img src="github.png" alt="GitHub">GitHub</span>
+      <span><img src="vscode.png" alt="Visual Studio Code">Visual Studio Code</span>
+      <span><img src="XAMPP.png" alt="XAMPP">XAMPP</span>
+      <span><img src="figma.png" alt="Figma">Figma</span>
     </div>
-</body>
+  </section>
 
+  <!-- Projecten Sectie -->
+  <section id="projecten" class="projecten">
+    <h2>Projecten</h2>
+    <div class="project">
+      <h3>AanmeldPortaal</h3>
+      <p>Een platform voor registratie en login functies. Gebouwd met HTML, CSS, en JavaScript.</p>
+    </div>
+    <div class="project">
+      <h3>Cookie Clicker</h3>
+      <p>Een interactieve clicker game met thema-toggling. Gebouwd met JavaScript en CSS.</p>
+    </div>
+  </section>
+
+  <!-- Contact Sectie -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:jouw-email@example.com">jouw-email@example.com</a></p>
+    <p>LinkedIn: <a href="#">LinkedIn-profiel</a></p>
+    <p>GitHub: <a href="#">GitHub-profiel</a></p>
+  </section>
+</body>
 </html>
