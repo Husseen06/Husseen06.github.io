@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie clicker</title>
+    <link rel="stylesheet" href="cookie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <button id="theme-toggle" class="theme-toggle">Toggle Theme</button>
+    <div class="container">
+        <div class="active-items">
+            <h3>Active Items</h3>
+            <h4 id="active-upgrades-list">Active Upgrades: None</h4>    
+        </div>
+
+        <div class="auto-clickers">
+            <h2>Auto Clickers</h2>
+            <button class="auto-clicker-item" id="auto-clicker">Auto Clicker 750 Cookies</button>
+            <button class="auto-clicker-item" id="super-clicker">Super Clicker 5000 Cookies</button>
+            <button class="auto-clicker-item" id="mega-clicker">Mega Clicker 10000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="rare-clicker">Rare Clicker 500000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="legendary-clicker">Legendary Clicker 2500000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="mythical-clicker">Mythical Clicker 6000000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="ultra-clicker">Ultra Clicker 10000000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="supreme-clicker">Supreme Clicker 25000000 Cookies</button>
+            <button class="auto-clicker-item hidden" id="godly-clicker">Godly Clicker 50000000 Cookies</button>
+        </div>
+
+        <div id="cookie-section">
+            <div id="cookie-container">
+                <img src="koekje.png" alt="Cookie" id="cookie" draggable="false">
+                <span id="floating-text">+0</span>
+            </div>
+            <p>Cookies: <span id="cookie-count">0</span></p>
+        </div>
+
+        <div class="upgrades">
+            <h2>Upgrades</h2>
+            <button class="upgrade-item">Double Clicker 50 Cookies</button>
+            <button class="upgrade-item">Triple Clicker 250 Cookies</button>
+            <button class="upgrade-item">Quadruple Clicker 750 Cookies</button>
+            <button class="upgrade-item hidden" id="quintuple-clicker">Quintuple Clicker 1500 Cookies</button>
+            <button class="upgrade-item hidden" id="sextuple-clicker">Sextuple Clicker 5000 Cookies</button>
+            <button class="upgrade-item hidden" id="septuple-clicker">Septuple Clicker 12000 Cookies</button>
+        </div>
+    </div>
+
+    <script src="cookie.js"></script>
+    <script>
+       const themeToggleButton = document.getElementById('theme-toggle');
+const cookieImage = document.getElementById('cookie');
+
+themeToggleButton.addEventListener('click', () => {
+    
+    document.body.classList.toggle('inverted-theme');
+
+  
+    if (document.body.classList.contains('inverted-theme')) {
+        cookieImage.src = "wit koekje.png"; 
+    } else {
+        cookieImage.src = "koekje.png"; 
+    }
+});
+
+    </script>
+</body>
+</html>

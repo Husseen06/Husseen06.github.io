@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepagina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Mijn Social Media</h1>
+            <nav>
+                <a href="login.php">Inloggen</a>
+                <a href="register.php">Registreren</a>
+                <a href="dashboard.php">Dashboard</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile">
+            <img src="path/to/default-profile.jpg" alt="Profielafbeelding" class="profile-picture">
+            <h2>Welkom, Gebruiker!</h2>
+            <p>Bekijk je feed, update je status, en meer!</p>
+        </div>
+
+        <div class="feed">
+            <div class="post">
+                <h3>Gebruiker 1</h3>
+                <p>Dit is een voorbeeldbericht op de feed.</p>
+            </div>
+            <div class="post">
+                <h3>Gebruiker 2</h3>
+                <p>Nog een voorbeeldbericht op de feed.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> Mijn Social Media. Alle rechten voorbehouden.</p>
+    </footer>
+</body>
+</html>

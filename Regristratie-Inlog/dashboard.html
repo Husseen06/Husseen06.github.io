@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin: 50px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        .logout {
+            margin-top: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+        <div class="dashboard-container">
+            <!-- Profile Picture -->
+            <img src="<?php echo $profile_picture; ?>" alt="Profielfoto" class="profile-picture">
+            
+            <!-- Welcome Message -->
+            <h1>Welkom, <?php echo $gebruikersnaam; ?>!</h1>
+            <p class="welcome-message">Fijn dat je bent ingelogd.<?php echo $gebruikersnaam; ?> Bekijk je account en blijf op de hoogte van nieuwe functies!</p>
+            
+            <!-- Logout Button -->
+            <a href="logout.php" class="logout">Uitloggen</a>
+            
+            <footer>
+                <p>&copy; <?php echo date('Y'); ?> Jouw Bedrijf. Alle rechten voorbehouden.</p>
+            </footer>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
