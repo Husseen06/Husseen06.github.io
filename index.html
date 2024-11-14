@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Husseen Aden - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Header Sectie -->
   <section id="header" class="kop">
@@ -16,7 +20,6 @@
     <p>Tweede Jaars Student Software Developer</p>
     <nav class="navigatie">
       <a href="#over-mij">Over Mij</a>
-      <a href="#ervaring">Ervaring</a>
       <a href="#vaardigheden">Vaardigheden</a>
       <a href="#projecten">Projecten</a>
       <a href="#contact">Contact</a>
@@ -26,15 +29,16 @@
   <!-- Over Mij Sectie -->
   <section id="over-mij" class="over-mij">
     <h2>Over Mij</h2>
-    <p>Hallo, ik ben Husseen, een eerstejaars student Software Developer bij het Techniek College Rotterdam. Ik ben 17 jaar oud en kom uit Ceel Barde, Somalië.</p>
-<p>In mijn vrije tijd speel ik graag voetbal met vrienden, game ik en kijk ik films en series.</p>
-<p>Ik heb ervaring met HTML, CSS, JavaScript en PHP. Onlangs heb ik het project Chirpify afgerond, waarvoor ik HTML, CSS, JavaScript en PHP heb gebruikt.</p>
-<p>Ook heb ik als project een website gemaakt voor het Techniek College Rotterdam, waarbij ik HTML, CSS en JavaScript heb toegepast.</p>
-<p>Ik vind het leuk om te leren en mijn vaardigheden te verbeteren terwijl ik aan deze projecten werk.</p>
-
+    <p>Hallo, ik ben Husseen, een tweedejaars student Software Developer bij het Techniek College Rotterdam. Ik ben 17
+      jaar oud en kom uit Ceel Barde, Somalië.</p>
+    <p>In mijn vrije tijd speel ik graag voetbal met vrienden, game ik en kijk ik films en series.</p>
+    <p>Ik heb ervaring met HTML, CSS, JavaScript en PHP. Onlangs heb ik het project Chirpify afgerond, waarvoor ik HTML,
+      CSS, JavaScript en PHP heb gebruikt.</p>
+    <p>Ook heb ik als project een website gemaakt voor het Techniek College Rotterdam, waarbij ik HTML, CSS en
+      JavaScript heb toegepast.</p>
+    <p>Ik vind het leuk om te leren en mijn vaardigheden te verbeteren terwijl ik aan deze projecten werk.</p>
     <img src="profile.png" alt="">
-</section>
-
+  </section>
 
   <!-- Vaardigheden Sectie -->
   <section id="vaardigheden" class="vaardigheden">
@@ -49,7 +53,7 @@
       <span><img src="wordpress.png" alt="WordPress">WordPress</span>
       <span><img src="github.png" alt="GitHub">GitHub</span>
       <span><img src="vscode.png" alt="Visual Studio Code">Visual Studio Code</span>
-      <span><img src="XAMPP.png" alt="XAMPP">XAMPP</span>
+      <span><img src="xampp.png" alt="XAMPP">XAMPP</span>
       <span><img src="figma.png" alt="Figma">Figma</span>
     </div>
   </section>
@@ -57,22 +61,39 @@
   <!-- Projecten Sectie -->
   <section id="projecten" class="projecten">
     <h2>Projecten</h2>
+
+    <!-- Project 1: AanmeldPortaal -->
     <div class="project">
       <h3>AanmeldPortaal</h3>
-      <p>Een platform voor registratie en login functies. Gebouwd met HTML, CSS, en JavaScript.</p>
+   <a href="Regristratie-Inlog/Regristreren.html"> <img src="regristatie.png" alt="AanmeldPortaal Project Image" width="500vw" style="border-radius: 15px;"></a>
+      <p>Een platform voor registratie en login functies. Gebouwd met HTML, CSS, PHP en SQL.<br> (Inloggen en registreren
+        werkt hier niet omdat het gelinkt is met een database)</p>
+      <div class="project-buttons">
+        <a href="Regristratie-Inlog/Regristreren.html" class="project-link">Bekijk Project</a>
+        <a href="https://github.com/Husseen06/AanmeldPortaal" class="project-link github-button">GitHub</a>
+      </div>
     </div>
+
+    <!-- Project 2: Cookie Clicker -->
     <div class="project">
       <h3>Cookie Clicker</h3>
-      <p>Een interactieve clicker game met thema-toggling. Gebouwd met JavaScript en CSS.</p>
+      <a href="CookieClikker/index.html"><img src="cookieclickerFoto.png" alt="Cookie Clicker Project Image" width="500vw" style="border-radius: 15px;"></a>
+
+      <p>Een interactieve clicker game met thema-toggling.<br> Gebouwd met HTML, CSS en JavaScript.</p>
+      <div class="project-buttons">
+        <a href="CookieClikker/index.html" class="project-link">Bekijk Project</a>
+        <a href="https://github.com/Husseen06/Cookie-Clicker" class="project-link github-button">GitHub</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Sectie -->
-  <section id="contact" class="contact">
+  <!-- Footer Sectie -->
+  <footer id="contact" class="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:jouw-email@example.com">jouw-email@example.com</a></p>
-    <p>LinkedIn: <a href="#">LinkedIn-profiel</a></p>
-    <p>GitHub: <a href="#">GitHub-profiel</a></p>
-  </section>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/husseen-aden-088692294/">LinkedIn</a></p>
+    <p>GitHub: <a href="https://github.com/Husseen06">GitHub</a></p>
+    <p>Email: <a href="mailto:husseenahmed24@outlook.com">husseenahmed24@outlook.com</a></p>
+  </footer>
 </body>
+
 </html>
