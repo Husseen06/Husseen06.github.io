@@ -145,8 +145,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
-.projecten img { box-shadow: 0 0 5px rgba(135, 135, 135, 3.3);
+
+.projecten img {
+  box-shadow: 0 0 5px rgba(135, 135, 135, 3.3);
 }
+
 .projecten h2 {
   color: #444;
   margin-bottom: 20px;
@@ -219,6 +222,12 @@ footer span img {
 footer.contact a {
   color: #fff;
   text-decoration: none;
+}
+
+footer.contact span {
+  position: relative;
+  /* Ensures links are positioned above other elements */
+  z-index: 10;
 }
 
 footer.contact a:hover {
