@@ -79,12 +79,9 @@ section {
 
 
 .over-mij p {
-  position: relative;
-  left: 200px;
   font-size: 17px;
   line-height: 1.6;
   text-align: center;
-  max-width: 1000px;
   ;
 }
 
@@ -190,6 +187,7 @@ section {
   font-size: 2rem;
 }
 
+
 .project-lijst {
   display: flex;
   flex-direction: row;
@@ -206,7 +204,18 @@ section {
   padding: 20px;
   text-align: left;
 }
-
+.project:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+  transform: translateY(-5px);       
+}
+.project span img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 30px;
+  /* Aangepaste grootte voor afbeeldingen */
+  height: auto;
+  margin-right: 8px;}
 .project img {
   display: flex;
   justify-content: center;
@@ -277,4 +286,12 @@ footer.contact span {
 
 footer.contact a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .kop img {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30vw;
+  }  
 }
