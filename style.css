@@ -1,15 +1,20 @@
 /* Algemene stijl */
+*{
+  overflow-x: hidden;
+}
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #e0e0e0;
+  background: #121212;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
   font-family: 'Kanit', sans-serif;
   margin: 0;
+  color: #ffffff;
 }
 
 img {
@@ -27,15 +32,17 @@ a {
   overflow: hidden;
   height: 85vh;
   text-align: center;
-  background: linear-gradient(135deg, #6C63FF, #42A5F5);
+  background: linear-gradient(135deg, #6C63FF, #7F00FF);
   color: #fff;
   padding: 4rem 2rem;
+  position: relative;
 }
 .kop h1, .kop h2 {
   margin: 0;
   position: relative;
   left: 350px;
   top: 200px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 .kop h1 {
   font-size: 3.5rem;
@@ -43,7 +50,7 @@ a {
   text-align: left;
 }
 
-.kop h2{
+.kop h2 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   text-align: left;
@@ -53,8 +60,9 @@ a {
   border-radius: 50%;
   margin: 1rem auto;
   width: 250px;
+  box-shadow: 0 0 10px #7F00FF;
   position: relative;
-  top: 0px;
+  top: 0;
   left: 300px;
 }
 
@@ -71,13 +79,16 @@ a {
   font-weight: 600;
   color: #fff;
   padding: 0.5rem 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-  transition: background 0.3s;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff33;
+  border-radius: 10px;
+  transition: all 0.3s;
+  backdrop-filter: blur(10px);
 }
 
 .navigatie a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #ffffff22;
+  transform: translateY(-2px);
 }
 
 /* Secties */
@@ -86,16 +97,17 @@ section {
 }
 
 .over-mij, .opleidingen, .vaardigheden, .projecten {
-  background-color: #f9f9f9;
+  background-color: #1f1f1f;
   margin-bottom: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
+  color: #ffffff;
 }
 
 section p {
@@ -103,43 +115,43 @@ section p {
   max-width: 800px;
   margin: 0 auto;
 }
+
 /* Opleidingen */
 .opleidingen {
-  padding: 2rem; /* Added padding to prevent text from being too close to the edges */
+  padding: 2rem;
   font-size: 1rem;
 }
 
 .opleidingen p {
   position: relative;
-  top: 0; /* Removed the previous negative offset */
   margin-bottom: 1rem;
   line-height: 1.5;
   text-align: left;
-  padding: 1rem; /* Added padding for better spacing */
+  padding: 1rem;
   border-radius: 5px;
+  background-color: #2a2a2a;
 }
 
-.opleidingen .opleiding {
+.opleiding {
   margin-bottom: 1.5rem;
   padding: 1rem;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #292929;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
 }
 
-/* Example of how to structure each opleiding in HTML */
-.opleidingen .opleiding h3 {
+.opleiding h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+   position: relative;
+  left: 490px;
+  color: #ffffff;
 }
 
-.opleidingen .opleiding p {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.opleidingen .opleiding .periode {
+.opleiding .periode {
   font-size: 0.9rem;
-  color: #4CAF50; /* Green color for dates or duration */
+ 
+  color: #ffffff;
 }
 
 /* Vaardigheden */
@@ -156,9 +168,10 @@ section p {
   gap: 0.5rem;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #555;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 .vaardigheid-set img {
@@ -174,10 +187,10 @@ section p {
 }
 
 .project {
-  background: #fff;
+  background: #222;
   padding: 1.5rem;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
@@ -188,7 +201,7 @@ section p {
 
 .project h3 {
   margin-bottom: 1rem;
-  color: #333;
+  color: #f5f5f5;
 }
 
 .project p {
@@ -199,22 +212,22 @@ section p {
 .project .btn {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #6C63FF;
+  background: #7F00FF;
   color: #fff;
   font-weight: bold;
   border-radius: 5px;
-  transition: background 0.3s;
+  transition: all 0.3s;
 }
 
 .project .btn:hover {
-  background: #42A5F5;
+  background: #9C27B0;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 2rem;
-  background: linear-gradient(135deg, #6C63FF, #42A5F5);
+  background: linear-gradient(135deg, #6C63FF, #7F00FF);
   color: #fff;
 }
 
@@ -247,5 +260,80 @@ footer p {
   .navigatie {
     flex-wrap: wrap;
     gap: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .kop {
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .kop img {
+    width: 150px;
+    left: 0;
+    top: 0;
+    margin: 0 auto 1rem auto;
+    position: static;
+  }
+
+  .kop h1, .kop h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    position: static;
+    left: 0;
+    top: 0;
+  }
+
+  .kop h2 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .navigatie {
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    gap: 0.5rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .vaardigheid-set {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-lijst {
+    grid-template-columns: 1fr;
+  }
+
+  .project {
+    padding: 1rem;
+  }
+
+  .project img {
+    width: 100%;
+    height: auto;
+  }
+
+  footer img {
+    width: 40px;
+    height: 40px;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+  .opleidingen p,
+  .opleidingen .opleiding p {
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
 }
