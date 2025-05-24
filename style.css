@@ -1,8 +1,9 @@
 /* Algemene stijl */
 *{
-  overflow-x: hidden;
+  
 }
 body {
+  overflow-x: hidden;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
@@ -243,7 +244,7 @@ footer img {
 }
 
 footer img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 footer p {
