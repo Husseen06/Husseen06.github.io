@@ -224,6 +224,34 @@ section p {
   background: #9C27B0;
 }
 
+/* Download CV Button */
+.download-cv-btn {
+  position: relative;
+  top: 160px;
+  left: -460px; /* aligns with your h1/h2 left offset */
+  display: inline-block;
+  margin-top: 1.5rem;
+  margin-left: 350px; /* aligns with your h1/h2 left offset */
+  /* Optional: adjust margin-left as needed for your layout */
+  padding: 0.8rem 2rem;
+  background: #fff;
+  color: #7F00FF;
+  font-weight: bold;
+  border-radius: 25px;
+  border: none;
+  font-size: 1.1rem;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.download-cv-btn:hover {
+  background: #7F00FF;
+  color: #fff;
+  transform: translateY(-2px) scale(1.05);
+}
+
 /* Footer */
 footer {
   text-align: center;
@@ -269,6 +297,8 @@ footer p {
     padding: 2rem 1rem;
   }
 
+
+
   .kop img {
     width: 150px;
     left: 0;
@@ -289,6 +319,19 @@ footer p {
     font-size: 1rem;
     margin-top: 0.5rem;
   }
+    .download-cv-btn {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    width: 50%;
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+   
 
   .navigatie {
     flex-direction: column;
